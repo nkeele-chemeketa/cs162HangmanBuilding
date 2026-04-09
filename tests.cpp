@@ -70,4 +70,4 @@ TEST_CASE("isDone")
 
   game.makeGuess('h');
   CHECK(game.isDone() == true);
-}1
+}
