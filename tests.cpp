@@ -14,3 +14,13 @@ TEST_CASE("test basics")
   CHECK(game.getGuessedLetters() == "");
   CHECK(game.getWrongGuesses() == 0);
 }
+
+TEST_CASE("test basics2")
+{
+  Hangman game("banana");
+
+  CHECK(game.getWord() == "banana");
+  CHECK(game.getBoard() == "______");
+  CHECK(game.getGuessedLetters() == "");
+  CHECK(game.getWrongGuesses() == 0);
+}
